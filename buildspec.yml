@@ -4,7 +4,7 @@ phases:
     runtime-versions:
       docker: 18
     commands: 
-      - apt-get update -yaw
+      - apt-get update
       - apt-get install -y jq
       - terraformImage="hashicorp/terraform:0.12.23"
       - docker pull $terraformImage
